@@ -5,37 +5,36 @@
     <title>Designers portfolio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
-    
 
-    <!-- LESS основний файл -->
+    <!— LESS основний файл —>
     <link rel="stylesheet/less" type="text/css" href="assets/less/main.less" />
-    <!-- LESS JavaScript компілятор -->
+    <!— LESS JavaScript компілятор —>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+    <link href="/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
 
 </head>
 <body>
-<!-- Классы navbar и navbar-default (базовые классы меню) -->
+<!— Классы navbar и navbar-default (базовые классы меню) —>
 <nav class="navbar navbar-inverse">
-    <!-- Контейнер (определяет ширину Navbar) -->
+    <!— Контейнер (определяет ширину Navbar) —>
     <div class="container-fluid">
-        <!-- Заголовок -->
+        <!— Заголовок —>
         <div class="navbar-header">
-            <!-- Кнопка «Гамбургер» отображается только в мобильном виде (предназначена для открытия основного содержимого Navbar) -->
+            <!— Кнопка «Гамбургер» отображается только в мобильном виде (предназначена для открытия основного содержимого Navbar) —>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="icon-bar">
                 <span class="icon-bar "></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <!-- Бренд или название сайта (отображается в левой части меню) -->
+            <!— Бренд или название сайта (отображается в левой части меню) —>
             <a class="navbar-brand" href="#">Brand</a>
         </div>
-        <!-- Основная часть меню (может содержать ссылки, формы и другие элементы) -->
+        <!— Основная часть меню (может содержать ссылки, формы и другие элементы) —>
         <div class="collapse navbar-collapse" id="navbar-main">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="main_page.html">Main</a></li>
-                <li><a href="#">Ссылка 2</a></li>
-                <li><a href="#">Ссылка 3</a></li>
-                <li><a href="#">Ссылка 4</a></li>
+                <li><a href="#">Comments</a></li>
+                <li><a href="#">Make an order</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
             </ul>
         </div>
@@ -48,49 +47,45 @@
         <div>Concept artist and Graphic designer</div>
     </div>
 
-    <!-- Карусель -->
+    <!— Карусель —>
     <div id="slider" class="carousel slide row" data-interval="3000" data-ride="carousel">
-        <!-- Индикаторы для карусели -->
+        <!— Индикаторы для карусели —>
         <ol class="carousel-indicators">
-            <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+            <!— Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" —>
             <li data-target="#slider" data-slide-to="0" class="active"></li>
-            <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+            <!— Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" —>
             <li data-target="#slider" data-slide-to="1"></li>
-            <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+            <!— Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" —>
             <li data-target="#slider" data-slide-to="2"></li>
         </ol>
-        <!-- Слайды карусели -->
+        <!— Слайды карусели —>
         <div class="carousel-inner">
 
-            <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+            <!— Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда —>
             <div class="active item">
-                <img src="assets/images/long_cr_concept.jpg"style="height:100%;width:100%;">
+                <img src="assets/images/slider_2.jpg" style="height:100%;width:100%;">
                 <div class="carousel-caption">
                 </div>
             </div>
-            <!-- Слайд №2 -->
+            <!— Слайд №2 —>
             <div class="item">
-                <h2>Slide 2</h2>
+                <img src="assets/images/slider_1.jpg" style="height:100%;width:100%;">
                 <div class="carousel-caption">
-                    <h3>Second slide label</h3>
-                    <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
                 </div>
             </div>
-            <!-- Слайд №3 -->
+            <!— Слайд №3 —>
             <div class="item">
-                <h2>Slide 3</h2>
+                <img src="assets/images/slider_3.jpg" style="height:100%;width:100%;">
                 <div class="carousel-caption">
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </div>
             </div>
         </div>
-        <!-- Навигация для карусели -->
-        <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+        <!— Навигация для карусели —>
+        <!— Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" —>
         <a class="carousel-control left" href="#slider" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
-        <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+        <!— Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" —>
         <a class="carousel-control right" href="#slider" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
@@ -98,52 +93,60 @@
 
     <div class="photo-grid">
         <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <img class="ph1" src="assets/images/ph1_1x1.jpg" alt="Концепт створіння">
-            <div class="caption">
-                <h3>Концепт-арт створіннь</h3>
-                 </div>
+            <div class="thumbnail">
+                <a href="cr_concept_gallery.html">   <img class="ph1" src="assets/images/ph1_1x1.jpg" alt="Концепт створіння"></a>
+                <div class="caption">
+                    <h3>Concept art of creatures</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="thumbnail">
+            <a href="#">    <img class="ph1" src="assets/images/bg_1x1.jpg" alt="Concept art of the environment"></a>
+                <div class="caption">
+                    <h3>Concept of environment</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="char_concept_gallery.html">  <img class="ph1" src="assets/images/gg.jpg" alt="Concept art of characters"></a>
+                <div class="caption">
+                    <h3>Concept art of characters</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="#"> <img class="ph1" src="assets/images/arch.jpg" alt=">Concept art of architecture"></a>
+                <div class="caption">
+                    <h3>Concept art of architecture</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="#">  <img class="ph1" src="assets/images/3d_1x1.jpg" alt="3D modeling"></a>
+                <div class="caption">
+                    <h3>3D modeling</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="#">    <img class="ph1" src="assets/images/il-1_1x1.jpg" alt="Illustration"></a>
+                <div class="caption">
+                    <h3>Illustration</h3>
+                </div>
+            </div>
         </div>
     </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img class="ph1" src="assets/images/bg_1x1.jpg" alt="Концепт середовища">
-                <div class="caption">
-                    <h3>Концепт-арт середовища</h3>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img class="ph1" src="assets/images/gg.jpg" alt="Концепт персонажа">
-                <div class="caption">
-                    <h3>Концепт-арт персонажа</h3>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img class="ph1" src="assets/images/arch.jpg" alt="Концепт персонажа">
-                <div class="caption">
-                    <h3>Концепт-арт персонажа</h3>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img class="ph1" src="assets/images/3d_1x1.jpg" alt="3D моделінг">
-                <div class="caption">
-                    <h3>3D моделінг</h3>
-                </div>
-            </div>
-        </div>
-</div>
-<!-- jQuery JavaScript -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+    <!-- jQuery JavaScript-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
 
-<!--Bootsrap JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-</div>
+    <!--Bootsrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </div>
     <div class="footer">
         <div class="footer-left">
             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -152,5 +155,5 @@
             <a href="#"><i class="fa fa-envelope"></i></a>
         </div>
     </div>
-</body>
-</html>
+    </body>
+    </html>
