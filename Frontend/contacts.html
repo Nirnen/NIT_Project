@@ -13,26 +13,25 @@
 </head>
 <body>
     <nav class="navbar navbar-inverse">
-    <!-- Контейнер (определяет ширину Navbar) -->
+    <!— Контейнер (определяет ширину Navbar) —>
     <div class="container-fluid">
-        <!-- Заголовок -->
+        <!— Заголовок —>
         <div class="navbar-header">
-            <!-- Кнопка «Гамбургер» отображается только в мобильном виде (предназначена для открытия основного содержимого Navbar) -->
+            <a class="navbar-brand" href="#">
+                <img src="/assets/images/brand.png"></a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="icon-bar">
                 <span class="icon-bar "></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <!-- Бренд или название сайта (отображается в левой части меню) -->
-            <a class="navbar-brand" href="#">Brand</a>
         </div>
-        <!-- Основная часть меню (может содержать ссылки, формы и другие элементы) -->
+        <!— Основная часть меню (может содержать ссылки, формы и другие элементы) —>
         <div class="collapse navbar-collapse" id="navbar-main">
             <ul class="nav navbar-nav">
-                <li><a href="main_page.html">Main</a></li>
+                <li class="active"><a href="main_page.html">Main</a></li>
                 <li><a href="#">Comments</a></li>
                 <li><a href="#">Make an order</a></li>
-                <li class="active"><a href="contacts.html">Contacts</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
             </ul>
         </div>
     </div>
