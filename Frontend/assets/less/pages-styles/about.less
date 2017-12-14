@@ -1,0 +1,73 @@
+svg {
+    display: block;
+    font: 120px 'Montserrat';
+    width: 100%;
+    height: 40%;
+    margin:auto;
+    text-align: center;
+    padding-top:60;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 11% 29%;
+    stroke-width: 3px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+    stroke: #808284;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #2f3133;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #43494f;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #9da2aa;
+	animation-delay: -4s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+#hi{
+text-align: center;
+    font-size: 26px;
+    margin:auto;
+}
+p{
+font-size:26px;
+    width:50%;
+    align-content: left;
+    margin:auto;
+    margin-top: 20px;
+    color:#666;
+}
+@media all and (max-width: 1200px) { /* screen size until 1200px */
+    p,#hi {
+        font-size: 25px; /* 1.5x default size */
+    }
+}
+@media all and (max-width: 1000px) { /* screen size until 1000px */
+    p,#hi {
+        font-size: 25px; /* 1.2x default size */
+        }
+    }
+@media all and (max-width: 500px) { /* screen size until 500px */
+    p,#hi {
+        font-size: 18px;
+        width:70%;
+        text-align:center;
+        }
+    }
+    
